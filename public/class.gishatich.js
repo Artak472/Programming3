@@ -1,27 +1,8 @@
-class Gishatich{
+class Gishatich extends parent{
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
-        this.energy = 3;
-        this.index = index;
-        this.directions = [];
+        super(x, y, index,);
         this.anun = 0;
     }
-
-
-    getNewCoordinates() {
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
-    }
-
 
     chooseCell(character1,character2,character3) {
         this.getNewCoordinates();

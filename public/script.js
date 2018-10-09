@@ -128,7 +128,6 @@ var matrix = [
 ];
 
 
-
 var side = 7;
 
 var grassArr = [];

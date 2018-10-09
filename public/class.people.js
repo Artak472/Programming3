@@ -1,10 +1,7 @@
-class People{
+class People extends parent{
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
+        super(x, y, index);
         this.energy = 5;
-        this.index = index;
-        this.directions = [];
         this.anun = 0;
     }
 
