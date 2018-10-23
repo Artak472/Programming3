@@ -136,6 +136,27 @@ var gishatichArr = [];
 var peopleArr = [];
 var eshArr = [];
 
+var time = setInterval("exanak()", 1000);
+var deg = 25;
+var ex = "amar";
+
+function exanak(){
+    deg = deg - 1;
+    if(deg >= 2){
+        deg = deg - 1;
+    }
+    else if(deg <= -25){
+        deg = 25;
+    }
+    if(deg > 0){
+        ex = "amar";
+    }
+    else{
+        ex = "dzmer";
+    }    
+}
+
+
 function setup()
 {
     frameRate(10);
@@ -178,6 +199,10 @@ function setup()
 }
 
 
+
+
+
+
 function draw()
 {
     for(var y = 0; y < matrix.length; y++)
@@ -191,8 +216,14 @@ function draw()
             }
             else if(matrix[y][x] == 2)
             {
-                fill('yellow');
-                rect(x * side, y * side, side, side);
+                if (ex == "amar"){
+                    fill('yellow');
+                    rect(x * side, y * side, side, side);
+                }
+                else if(ex == "dzmer"){
+                    fill('#ffff4a');
+                    rect(x * side, y * side, side, side);
+                }
             }
             else if(matrix[y][x] == 3)
             {
@@ -201,21 +232,40 @@ function draw()
             }
             else if(matrix[y][x] == 4)
             {
-                fill('purple');
-                rect(x * side, y * side, side, side);
+                if(ex == "amar"){
+                    fill('purple');
+                    rect(x * side, y * side, side, side);
+                }
+                else if(ex == "dzmer"){
+                    fill('#c900c9');
+                    rect(x * side, y * side, side, side);
+                }
             }
             else if(matrix[y][x] == 5)
             {
-                fill('blue');
-                rect(x * side, y * side, side, side);
+                if(ex == "amar"){
+                    fill('blue');
+                    rect(x * side, y * side, side, side);
+                }
+                else if(ex == "dzmer"){
+                    fill('#0068fd');
+                    rect(x * side, y * side, side, side);
+                }
             }
             else if(matrix[y][x] == 0)
             {
-                fill('#acacac');
-                rect(x * side, y * side, side, side);
+                if(ex == "amar"){
+                    fill('#acacac');
+                    rect(x * side, y * side, side, side);
+                }
+                else if(ex == "dzmer"){
+                    fill('#fff');
+                    rect(x * side, y * side, side, side);
+                }
             }
         }
     }
+
 
     for(var i in grassArr)
     {

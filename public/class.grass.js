@@ -38,7 +38,16 @@ class Grass extends parent{
         var newCell = random(emptyCells);
 
         //console.log(emptyCells);
-        if (newCell && this.multiply >= 7) {
+        if (newCell && this.multiply >= 7 && ex == "amar") {
+            var newX = newCell[0];
+            var newY = newCell[1];
+            matrix[newY][newX] = this.index;
+
+            var newGrass = new Grass(newX, newY, this.index);
+            grassArr.push(newGrass);
+            this.multiply = 0;
+        }
+        else if(newCell && this.multiply >= 14 && ex == "dzmer"){
             var newX = newCell[0];
             var newY = newCell[1];
             matrix[newY][newX] = this.index;

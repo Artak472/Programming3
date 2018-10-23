@@ -25,13 +25,13 @@ class Gishatich extends parent{
         var cell = random(empty);
 
         if (cell) {
-             var newX = cell[0];
+            var newX = cell[0];
             var newY = cell[1];
             matrix[this.y][this.x]=this.anun;
             if(matrix[newY][newX]==1){
           this.anun=1;
             }
-              if(matrix[newY][newX]==2){
+            if(matrix[newY][newX]==2){
           this.anun=2;
             }
            
@@ -85,7 +85,7 @@ class Gishatich extends parent{
         var newCell = random(emptyCells);
 
         //console.log(emptyCells);
-        if (newCell && this.energy >= 3) {
+        if (newCell && this.energy >= 2) {
             var newX = newCell[0];
             var newY = newCell[1];
             matrix[newY][newX] = this.index;

@@ -54,7 +54,10 @@ class GrassEater extends parent{
             }
 
             this.energy++
-            if (this.energy == 3) {
+            if (this.energy == 3 && ex == "amar") {
+                this.mul();
+            }
+            else if(this.energy == 8 && ex == "dzmer"){
                 this.mul();
             }
 

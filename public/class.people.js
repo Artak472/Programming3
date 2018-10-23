@@ -35,9 +35,27 @@ class People extends parent{
         ];
     }
 
+    getNewCoordinates1() {
+        this.directions = [
+            [this.x - 1, this.y - 1],
+            [this.x, this.y - 1],
+            [this.x + 1, this.y - 1],
+            [this.x - 1, this.y],
+            [this.x + 1, this.y],
+            [this.x - 1, this.y + 1],
+            [this.x, this.y + 1],
+            [this.x + 1, this.y + 1]
+        ];
+    }
+
 
     chooseCell(character1,character2,character3,character4) {
-        this.getNewCoordinates();
+        if(ex == "amar"){
+            this.getNewCoordinates();
+        }
+        else if(ex == "dzmer"){
+            this.getNewCoordinates1();
+        }
         var found = [];
         for (var i in this.directions) {
             var x = this.directions[i][0];
