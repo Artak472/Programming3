@@ -1,4 +1,4 @@
-class Grass extends parent{
+module.exports = class Grass extends parent{
     constructor(x, y, index) {
         super(x, y, index);
         this.multiply = 0;

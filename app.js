@@ -4,6 +4,12 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 var matrix = require('./modules/matrix');
+var grass = require('./modules/class.grass');
+var grasEater = require('./modules/class.grassEater');
+var gishatich = require('./modules/class.gishatich');
+var people = require('./modules/class.people');
+var esh = require('./modules/class.esh');
+var parent = require('./modules/parent')
 
 app.use(express.static("."));
 app.get('/', function (req, res) {

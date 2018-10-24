@@ -1,4 +1,4 @@
-class GrassEater extends parent{
+module.exports = class GrassEater extends parent{
 
     chooseCell(character1,character2) {
         this.getNewCoordinates();

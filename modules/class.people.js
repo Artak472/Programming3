@@ -1,4 +1,4 @@
-class People extends parent{
+module.exports = class People extends parent{
     constructor(x, y, index) {
         super(x, y, index);
         this.energy = 5;

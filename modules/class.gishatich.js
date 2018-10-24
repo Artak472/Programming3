@@ -1,4 +1,4 @@
-class Gishatich extends parent{
+module.exports = class Gishatich extends parent{
     constructor(x, y, index) {
         super(x, y, index,);
         this.anun = 0;

@@ -1,4 +1,4 @@
-class Esh extends parent{
+module.exports = class Esh extends parent{
 
     chooseCell(character1,character2) {
         this.getNewCoordinates();
