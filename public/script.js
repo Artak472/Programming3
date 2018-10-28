@@ -18,7 +18,7 @@ function setup() {
         });
     });
 
-    window.addEventListener('click', function(){
+    window.addEventListener('click', function () {
         socket.emit('stop drawing', true);
     })
 
